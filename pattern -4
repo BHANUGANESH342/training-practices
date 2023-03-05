@@ -1,0 +1,13 @@
+x=int(input())
+y=x
+for i in range(x):
+    if(i>0):
+        y=y-1
+        z=y
+    for j in range(1,x+1):
+        if(j<=i):
+            print(z,end="")
+            z=z+1
+        else: 
+            print(x,end="")
+    print()
