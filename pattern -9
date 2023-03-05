@@ -1,0 +1,16 @@
+n=int(input())
+k=1
+for i in range(n,0,-1):
+    for j in range(n-i):
+        print(" ",end="")
+    for j in range(i):
+        print(k,end="*")
+        k=k+1
+    s=(n+1)*n-k+2
+    for j in range(i):
+        if(j==i-1):
+            print(s,end="")
+        else:
+            print(s,end="*")
+        s+=1
+    print()
