@@ -1,0 +1,9 @@
+n=int(input())
+x=m=1
+for i in range(n,0,-1):
+    for j in range(i):
+        print(x,end=" ")
+        x=x+2
+    m+=2
+    x=m
+    print()
